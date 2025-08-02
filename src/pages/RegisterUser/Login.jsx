@@ -3,6 +3,7 @@ import { FaTwitter, FaGoogle, FaFacebook, FaInstagram, FaGithub } from "react-ic
 import { Link, useNavigate } from "react-router-dom";
 import { AppContext } from "../../context/AppContext";
 import { FcGoogle } from "react-icons/fc";
+import toast from "react-hot-toast";
 
 
 const Login = () => {
@@ -23,7 +24,7 @@ const Login = () => {
     console.log("Form submitted");
     if (state === "Sign Up") {
       if (password === repeatPassword) {
-        alert("Welcome, Your account created ");
+        toast.success("Welcome, Your account created ");
         setauth(true);
       }
       else {
@@ -33,11 +34,11 @@ const Login = () => {
 
     }
     else if (state === "Sign In") {
-      alert("Welcome Back");
+      toast.success("Welcome Back");
       setauth(true);
     }
     else {
-      alert("Some Error Occured")
+      toast.error("Some Error Occured")
     }
 
     navigate('/')

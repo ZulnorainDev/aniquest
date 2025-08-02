@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
 const NewPassword = () => {
@@ -26,7 +27,7 @@ const NewPassword = () => {
             return;
         }
 
-        alert("Password reset:", form.newPassword);
+        toast.success("Password reset:", form.newPassword);
         navigate('/login')
     };
 
