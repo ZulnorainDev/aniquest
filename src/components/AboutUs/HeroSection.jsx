@@ -7,7 +7,7 @@ import frame1 from '../../assets/Frame_1.png';
 
 const HeroSection = () => {
   return (
-    <section className="w-full h-[500px] sm:h-[600px] md:h-[700px] bg-no-repeat bg-cover bg-bottom" style={{ backgroundImage: 'url(/Rectangle.png)' }}>
+    <section className="w-full h-[500px] sm:h-[600px] md:h-[700px] bg-no-repeat bg-cover bg-bottom" style={{ backgroundImage: 'url(/Rectangle_1.png)' }}>
       <div className="container mx-auto px-4 relative">
         <Navbar textColor="text-white" logo={logo1} />
 
